@@ -138,4 +138,4 @@ ALLOWED_HOSTS = ['desolate-ravine-81354.herokuapp.com', '127.0.0.1']
 
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update('postgres://ifrudiemycwhaz:4a4f46cac5e2040d831fc6d83a7fd443bd4d8522b541a28f69e96a14a85c0085@ec2-107-21-125-209.compute-1.amazonaws.com:5432/d3l1lemhmmhhmg')
+DATABASES['default'].update(db_from_env)
